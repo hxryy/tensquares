@@ -1,0 +1,14 @@
+server:
+  port: 9007
+spring:
+  application:
+    name: tensquare-search #搜索微服务
+  data:
+    elasticsearch:
+      cluster-nodes: 192.168.242.149:9300  #9200是所有语言通用端口。9300是专属java语言的端口
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:6868/eureka
+  instance:
+   prefer-ip-address: true
